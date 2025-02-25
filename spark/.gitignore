@@ -1,0 +1,39 @@
+# Spark specific files
+*.class
+*.log
+*.out
+*.pid
+*.swp
+*.swo
+*.tmp
+
+# Spark directories
+target/
+logs/
+tmp/
+work/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+out/
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Data
+ml-*/
+
+# Python
+__pycache__/
+
+# Jupyter
+.ipynb_checkpoints/

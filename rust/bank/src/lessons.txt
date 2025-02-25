@@ -1,0 +1,21 @@
+Ownership, Borrowing principle
+Lifetimes
+
+Rules in Rust
+1. Every value is owned by single variable, argument or field at a time
+2. Reassigning the value to a variable, passing it to a function or putting it into a vector moves the value and the previous owner can no longer use it
+3. You can create many read only reference to a value at the same time. These refs can all exist at the same time
+4. You can't move a value when reference to the value still exists
+5. You can make a writeable ref to a var when there are no ready only refs for var. One mutable ref can exist at a time
+6. You can't mutate a value through the owner when any ref to a value exist
+7. Some types of values are copied instead of moved (numbers, bools, char, tuples with copyable elements)
+8. When an owner goes out of scope, the value is dropped (cleaned up in memory)
+9. When owner of value goes out of scope there cannot be any reference to it
+10. reference to a value cannot outlive the value it refers to
+11. When in doubt remember that Rust wants to minimise unexpected updates to data
+
+// Review and make notes of the content of rust and the code samples taught in review
+
+------ Tech skills ------
+high scale distributed systems
+low level programming protocol
