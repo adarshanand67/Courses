@@ -16,7 +16,7 @@ pub fn core_concepts() {
     }
 
     // Pattern matching
-    let number = 2;
+    let number: i32 = 2;
     match number {
         1 => println!("One"),
         2 => println!("Two"),
@@ -24,12 +24,12 @@ pub fn core_concepts() {
     }
 
     // Mutable vs Immutable Bindings
-    let mut mutable = 10;
+    let mut mutable: i32 = 10;
 
     mutable += 5;
     println!("Mutable value: {}", mutable);
 
     // Implicit returns
-    let square = |x: i32| x * x;
+    let square: fn(i32) -> i32 = |x: i32| x * x;
     println!("Square of 4: {}", square(4));
 }

@@ -7,9 +7,6 @@
 /// # Returns
 /// The longer of the two string slices.
 pub fn lifetimes_example<'a>(x: &'a str, y: &'a str) -> &'a str {
-    if x.len() > y.len() {
-        x
-    } else {
-        y
-    }
+    let result: &'a str = if x.len() > y.len() { x } else { y };
+    result
 }

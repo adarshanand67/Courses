@@ -27,16 +27,16 @@ fn process_enum(e: E) {
 
 /// Demonstrates the use of enums and pattern matching in Rust.
 pub fn enums_example() {
-    let direction = Direction::Up;
+    let direction: Direction = Direction::Up;
     match direction {
         Direction::Up => println!("Going up"),
         Direction::_Down => println!("Going down"),
         Direction::_Left => println!("Going left"),
         Direction::_Right => println!("Going right"),
     }
-    let e = E::Number(-5);
+    let e: E = E::Number(-5);
     process_enum(e);
 
-    let e = E::FloatingPoint(3.14);
+    let e: E = E::FloatingPoint(3.14);
     process_enum(e);
 }

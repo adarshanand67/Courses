@@ -13,7 +13,7 @@ impl Rectangle {
 
 /// Demonstrates the use of structs in Rust.
 pub fn structs_example() {
-    let rect = Rectangle {
+    let rect: Rectangle = Rectangle {
         width: 10,
         height: 20,
     };

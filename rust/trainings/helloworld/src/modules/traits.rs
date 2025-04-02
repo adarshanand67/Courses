@@ -15,7 +15,7 @@ impl Describable for super::structs::Rectangle {
 
 /// Demonstrates the use of traits in Rust.
 pub fn traits_example() {
-    let rect = super::structs::Rectangle {
+    let rect: super::structs::Rectangle = super::structs::Rectangle {
         width: 15,
         height: 25,
     };

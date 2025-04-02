@@ -7,6 +7,8 @@ macro_rules! calculate {
 
 /// Demonstrates the use of macros in Rust.
 pub fn macros_example() {
-    calculate!(10, 5, +);
-    calculate!(10, 5, *);
+    let a: i32 = 10;
+    let b: i32 = 5;
+    calculate!(a, b, +);
+    calculate!(a, b, *);
 }

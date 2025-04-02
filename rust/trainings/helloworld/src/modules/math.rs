@@ -7,5 +7,6 @@
 /// # Returns
 /// The sum of the two integers.
 pub fn add(a: i32, b: i32) -> i32 {
-    a + b
+    let result: i32 = a + b;
+    result
 }
