@@ -42,5 +42,4 @@ fn main() {
     modules::concurrency::concurrency_example();
 
     modules::advanced_traits::advanced_traits_example();
-    modules::async_programming::async_programming_example();
 }

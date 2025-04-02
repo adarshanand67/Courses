@@ -25,7 +25,11 @@ impl Printable for Point<i32> {
 
 /// A generic function that returns the larger of two values.
 pub fn max<T: PartialOrd>(a: T, b: T) -> T {
-    if a > b { a } else { b }
+    if a > b {
+        a
+    } else {
+        b
+    }
 }
 
 /// Demonstrates the use of the generic function.
