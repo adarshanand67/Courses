@@ -1,3 +1,5 @@
+pub mod advanced_traits;
+pub mod async_programming;
 pub mod concurrency;
 pub mod core_concepts;
 pub mod enums;

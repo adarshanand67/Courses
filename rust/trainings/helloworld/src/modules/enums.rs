@@ -6,6 +6,18 @@ enum Direction {
     _Right,
 }
 
+impl Direction {
+    /// Returns a string representation of the direction.
+    pub fn as_str(&self) -> &str {
+        match self {
+            Direction::Up => "Up",
+            Direction::_Down => "Down",
+            Direction::_Left => "Left",
+            Direction::_Right => "Right",
+        }
+    }
+}
+
 /// Represents different types of data for demonstration purposes.
 #[derive(Debug)]
 enum E {
@@ -39,4 +51,7 @@ pub fn enums_example() {
 
     let e: E = E::FloatingPoint(3.14);
     process_enum(e);
+
+    let direction: Direction = Direction::Up;
+    println!("Direction: {}", direction.as_str());
 }

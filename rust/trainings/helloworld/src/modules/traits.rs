@@ -2,6 +2,11 @@
 pub trait Describable {
     /// Returns a description of the implementing type.
     fn describe(&self) -> String;
+
+    /// A default method that prints the description.
+    fn print_description(&self) {
+        println!("{}", self.describe());
+    }
 }
 
 impl Describable for super::structs::Rectangle {
@@ -19,5 +24,5 @@ pub fn traits_example() {
         width: 15,
         height: 25,
     };
-    println!("{}", rect.describe());
+    rect.print_description();
 }

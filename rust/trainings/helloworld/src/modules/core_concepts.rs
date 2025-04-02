@@ -32,4 +32,9 @@ pub fn core_concepts() {
     // Implicit returns
     let square: fn(i32) -> i32 = |x: i32| x * x;
     println!("Square of 4: {}", square(4));
+
+    // Slices
+    let array: [i32; 5] = [1, 2, 3, 4, 5];
+    let slice: &[i32] = &array[1..4];
+    println!("Slice: {:?}", slice);
 }

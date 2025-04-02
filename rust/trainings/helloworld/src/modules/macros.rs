@@ -1,7 +1,10 @@
 /// A macro for performing arithmetic operations and printing the result.
 macro_rules! calculate {
-    ($a:expr, $b:expr, $op:tt) => {
-        println!("Result: {}", $a $op $b);
+    ($a:expr, $b:expr, +) => {
+        println!("Addition: {}", $a + $b);
+    };
+    ($a:expr, $b:expr, *) => {
+        println!("Multiplication: {}", $a * $b);
     };
 }
 

@@ -13,4 +13,10 @@ pub fn ownership_and_borrowing() {
     let s6: &mut String = &mut s5; // Mutable reference
     s6.push_str(" string");
     println!("Modified value: {}", s6);
+
+    // Multiple immutable references
+    let s: String = String::from("hello");
+    let r1: &String = &s;
+    let r2: &String = &s;
+    println!("r1: {}, r2: {}", r1, r2);
 }
