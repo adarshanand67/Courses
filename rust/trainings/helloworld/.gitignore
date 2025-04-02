@@ -1,0 +1,35 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binaries
+*.test
+
+# Rust/Cargo specific files
+/target/
+/**/target/
+**/*.rs.bk
+
+# Incremental compilation files
+**/incremental/
+
+# Cargo.lock if the project is a library
+Cargo.lock
+
+# IDE and editor specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+*.bak
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+
+# Node.js specific files (if applicable)
+node_modules/

@@ -2,19 +2,17 @@
 /// immutable references, and mutable references.
 pub fn ownership_and_borrowing() {
     let s1: String = String::from("hello");
-    let _s2: String = s1; // s1 is moved to s2
-    // println!("{}", s1); // This would cause an error
+    let _s2: String = s1;
 
     let s3: String = String::from("world");
-    let s4: &String = &s3; // Borrowing
+    let s4: &String = &s3;
     println!("Borrowed value: {}", s4);
 
     let mut s5: String = String::from("mutable");
-    let s6: &mut String = &mut s5; // Mutable reference
+    let s6: &mut String = &mut s5;
     s6.push_str(" string");
     println!("Modified value: {}", s6);
 
-    // Multiple immutable references
     let s: String = String::from("hello");
     let r1: &String = &s;
     let r2: &String = &s;

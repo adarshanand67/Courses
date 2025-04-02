@@ -1,4 +1,3 @@
-/// Demonstrates error handling in Rust using the `Result` type.
 pub fn errors_and_results() -> Result<(), String> {
     let result: Result<i32, &str> = Ok(10);
     match result {
@@ -8,7 +7,6 @@ pub fn errors_and_results() -> Result<(), String> {
     Ok(())
 }
 
-/// Demonstrates the use of the `Option` type.
 pub fn option_example() {
     let some_value: Option<i32> = Some(42);
     let no_value: Option<i32> = None;
