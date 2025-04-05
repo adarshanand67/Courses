@@ -1,5 +1,3 @@
-#![allow(dead_code)]
-
 #[derive(Debug)]
 struct Point {
     x: u64,
@@ -15,9 +13,8 @@ enum Message {
     },
     Move(Point),
     Echo(String),
-    ChangeColor(u64, u64, u64),
+    ChangeColor(u8, u8, u8),
     Quit,
-    
 }
 
 impl Message {

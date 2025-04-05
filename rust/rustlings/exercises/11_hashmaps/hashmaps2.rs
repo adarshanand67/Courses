@@ -6,7 +6,7 @@
 // must add fruit to the basket so that there is at least one of each kind and
 // more than 11 in total - we have a lot of mouths to feed. You are not allowed
 // to insert any more of the fruits that are already in the basket (Apple,
-// Mango, and Lyche).
+// Mango, and Lychee).
 
 use std::collections::HashMap;
 
@@ -32,6 +32,9 @@ fn fruit_basket(basket: &mut HashMap<Fruit, u32>) {
         // TODO: Insert new fruits if they are not already present in the
         // basket. Note that you are not allowed to put any type of fruit that's
         // already present!
+        if !basket.contains_key(&fruit) {
+            basket.insert(fruit, 3); // Add new fruit with a count of 3
+        }
     }
 }
 

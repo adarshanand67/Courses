@@ -1,9 +1,8 @@
-use std::io::Read;
 use crate::http::Request;
-use std::net::TcpListener;
 use std::convert::TryFrom;
 use std::convert::TryInto;
-
+use std::io::Read;
+use std::net::TcpListener;
 
 pub struct Server {
     pub ip_address: String,
