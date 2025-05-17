@@ -1,0 +1,1 @@
+/home/a/adarsh-wsl/courses/rust/mod1/target/debug/mod1: /home/a/adarsh-wsl/courses/rust/mod1/src/main.rs /home/a/adarsh-wsl/courses/rust/mod1/src/mymod/mod.rs /home/a/adarsh-wsl/courses/rust/mod1/src/mymod/module1.rs
